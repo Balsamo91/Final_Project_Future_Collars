@@ -1,0 +1,401 @@
+body{
+    text-align:center;
+    background-color:#ffcc8e;
+  }
+  
+  .button{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+  
+  .button a{
+    color:white;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:36px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#FFA12B;
+    display:block;
+    position:relative;
+    padding:20px 40px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button a:active{
+    top:10px;
+    background-color:#F78900;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  }
+  
+  .button:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+/*  */
+  .navbar-section .btn-link:hover {
+    background-color: #002379;
+    color: #fff;
+}
+/*  */
+
+
+.button{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+  
+  .button a{
+    color:white;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:36px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#FFA12B;
+    display:block;
+    position:relative;
+    padding:20px 40px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button a:active{
+    top:10px;
+    background-color:#F78900;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  }
+  
+  .button:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+
+
+
+  /* My previuos correct with the button size*/
+
+  .button {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    }
+
+    .button a {
+        color: #F3F7EC;
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #006989;
+        display: block;
+        position: relative;
+        padding: 15px 30px;
+
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        text-shadow: 0px 1px 0px #b9b9b9;
+        filter: dropshadow(color=#b9b9b9, offx=0px, offy=1px);
+
+        -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+        -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #005C78;
+        box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #005C78;
+
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .button a:active {
+        top: 10px;
+        background-color: #F78900;
+
+        -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+        -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+        box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    }
+
+    .button:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        padding: 4px;
+        position: absolute;
+        bottom: -15px;
+        left: -4px;
+        z-index: -1;
+        background-color: #000000;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+/* Borders work now but as a shadow */
+.button a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFA12B;
+    display: block;
+    position: relative;
+    padding: 10px 30px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100, 0 15px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100, 0 15px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100, 0 15px 15px rgba(0, 0, 0, 0.5);
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.button a:active {
+    top: 10px;
+    background-color: #F78900;
+    
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100, 0 15px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100, 0 15px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100, 0 15px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Other TESTs */
+
+body {
+    text-align: center;
+    background-color: #ffcc8e;
+  }
+  
+  .button {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .button a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFA12B;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+  
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .button a:active {
+    top: 10px;
+    background-color: #F78900;
+  
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  }
+  
+  .button:after {
+    content: "";
+    height: 10px; /* Adjust the height to control the thickness of the black base */
+    width: 100%;
+    position: absolute;
+    bottom: -10px; /* This should match the height of the black base */
+    left: 0;
+    background-color: #000000;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    z-index: -1; /* Ensure it is behind the button */
+  }
+  
+
+
+  /* MORE MORE TESTING */
+  .button {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .button a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFA12B;
+    display: block;
+    position: relative;
+    padding: 20px 40px;
+  
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 1; /* Ensure the button is above the pseudo-element */
+  }
+  
+  .button a:active {
+    top: 10px;
+    background-color: #F78900;
+  }
+  
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: -10px; /* Positioning it below the button */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Height of the black line */
+    background-color: #000000;
+    border-radius: 0 0 5px 5px; /* Matching button's bottom corners */
+    z-index: 0; /* Ensure it's behind the button */
+  }
+  
+
+  /* LATESTest */
+
+  .button a{
+    color:white;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:24px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#FFA12B;
+    display:block;
+    position:relative;
+    padding: 15px 30px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.button a:active{
+    top:10px;
+    background-color:#F78900;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index: -1;
+    background-color:#000000 !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/* border-bottom: 1px solid #000000; */
+
+        /* .navbar-section .btn-link {
+            padding: 10px 20px;
+            border: 2px solid #FFFAE6;
+            background-color: #FFFAE6;
+            border-radius: 20px;
+            color: #002379;
+            text-decoration: none;
+            margin: 0 5px;
+            display: inline-flex;
+            align-items: center;
+            transition: background-color 0.3s, color 0.3s; */
+        /* } */
+        /* .navbar-section .btn-link h3 {
+            margin: 0;
+            line-height: 1;
+        } */
+
+        

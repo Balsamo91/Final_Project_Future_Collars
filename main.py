@@ -55,7 +55,7 @@ def delete_history(history_id):
     operations_recorded = History.query.all()
     account = Balance.query.first().amount
 
-    return render_template("history.html", operations_recorded=operations_recorded, balance=account)
+    return render_template("history.html", operations_recorded=operations_recorded, balance=account) and redirect('/history')
 
 
 @app.route('/purchase')
