@@ -131,14 +131,61 @@
         }
          .form-group {
             font-family: 'Arcade Rounded', sans-serif;
+            margin-top: 30px;
         }
         .typing-box {
             font-family: 'Arcade Normal', sans-serif;
+            margin-top: 2px;
         }
-
-
         .button-submit {
             margin-top: 10px;
+        }
+        .delete-btn a.btn-error{
+            color: #FF6B35;
+            background-color: #207ec5;
+            border: 2px solid #004E89;
+        }
+
+        .delete-btn a.btn-error:hover {
+            color: #004E89;
+            background-color: #FF6B35;
+            border: 2px solid #207ec5;
+        }
+        /* Hide the default radio button */
+        .custom-radio input[type="radio"] {
+            display: none;
+        }
+
+        /* Create a custom radio button */
+        .custom-radio i.form-icon {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #207ec5 !important;
+            border-radius: 50%;
+            background-color: #fff !important;
+            margin-right: 10px;
+            vertical-align: middle;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .custom-radio input[type="radio"]:checked + i.form-icon::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #FF6B35 !important;
+        }
+
+        /* Change color when hovered */
+        .custom-radio i.form-icon:hover {
+            border-color: #FF6B35 !important;
         }
 
         /* Sale and Purchase button SUBMITs */
@@ -146,7 +193,8 @@
             margin-top: 1%;
             font-size: 22px; /* Increase font size */
             font-family: 'Arcade Normal', sans-serif;
-            color: #EFEFD0; /* Text color */
+            /* color: #EFEFD0; */
+            color: #FF6B35;  /* Text color */
             background-color: #207ec5; /* Background color */
             border: none; /* Remove default border */
             padding: 5px 10px; /* Increase padding */
