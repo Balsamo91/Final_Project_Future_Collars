@@ -399,3 +399,115 @@ body {
         } */
 
         
+
+        /* Below is for the submit buttons */
+
+        .container-button-submit {
+          /* width: 400px;
+          height: 400px; */
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .center {
+          width: 180px;
+          height: 1px;
+          position: absolute;
+      }
+
+      .btn {
+          width: 180px;
+          height: 60px;
+          cursor: pointer;
+          background: #207ec5; /* This is for the button color itself*/
+          border: 4 #FF6B35; /* This is for the border line in the button*/
+          outline: none;
+          transition: 1s ease-in-out;
+      }
+
+      svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          fill: none;
+          stroke: #FF6B35; /* This is for the rotation line in the button*/
+          stroke-dasharray: 150 480;
+          stroke-dashoffset: 150;
+          transition: 1s ease-in-out;
+      }
+
+      .btn:hover {
+          transition: 1s ease-in-out;
+          background: #004E89;
+      }
+
+      .btn:hover svg {
+          stroke-dashoffset: -480;
+      }
+
+      .btn span {
+          color: #EFEFD0; /* This is for the text in the button*/
+          font-size: 18px;
+          font-weight: 100;
+          font-family: 'Arcade Normal', sans-serif;
+      }
+
+
+      .button-submit{
+        position:relative;
+        display:inline-block;
+        margin:20px;
+    }
+
+    .button-submit a{
+        color:white;
+        font-family:Helvetica, sans-serif;
+        font-weight:bold;
+        font-size:20px;
+        text-align: center;
+        text-decoration:none;
+        background-color:#FFA12B;
+        display:block;
+        position:relative;
+        padding:15px 30px;
+        
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        text-shadow: 0px 1px 0px #000;
+        filter: dropshadow(color=#000, offx=0px, offy=1px);
+        
+        -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+        -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+        box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+        
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .button-submit a:active{
+        top:10px;
+        background-color:#F78900;
+        
+        -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+        -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+        box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    }
+
+    .button-submit:after{
+        content:"";
+        height: calc(100% + 10px);
+        width: calc(100% + 10px);
+        position: absolute;
+        bottom: -15px;
+        left: -5px;
+        z-index: -1;
+        background-color:#2B1800;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }

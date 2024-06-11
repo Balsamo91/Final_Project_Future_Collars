@@ -13,6 +13,8 @@
     <style>
         @import url('https://fonts.cdnfonts.com/css/arcade-classic');
         @import url('https://fonts.cdnfonts.com/css/arcade');
+        @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
         body {
             margin: 0;
             padding: 0;
@@ -125,17 +127,39 @@
         .form-group-main {
             margin-left: 50px;
             margin-right: 50px;
-            margin-top: 60px;
+            margin-top: 80px;
         }
+         .form-group {
+            font-family: 'Arcade Rounded', sans-serif;
+        }
+        .typing-box {
+            font-family: 'Arcade Normal', sans-serif;
+        }
+
+
         .button-submit {
             margin-top: 10px;
         }
-        .button{
-            position:relative;
-            display:inline-block;
-            margin:20px;
+
+        /* Sale and Purchase button SUBMITs */
+        .button-action {
+            margin-top: 1%;
+            font-size: 22px; /* Increase font size */
+            font-family: 'Arcade Normal', sans-serif;
+            color: #EFEFD0; /* Text color */
+            background-color: #207ec5; /* Background color */
+            border: none; /* Remove default border */
+            padding: 5px 10px; /* Increase padding */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block; /* Ensure button behaves like an inline element */
+            cursor: pointer; /* Pointer cursor on hover */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline from text */
+            text-shadow: 0px 0px 10px #000;
+
         }
-        
+
+        /* Below is for the navbar buttons */
         .button{
             position:relative;
             display:inline-block;
@@ -192,6 +216,61 @@
             -moz-border-radius: 5px;
             border-radius: 5px;
         }
+
+        /* Below is for the SUBMIT buttons */
+
+        /* .container-button-submit {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center {
+            width: 180px;
+            height: 1px;
+            position: absolute;
+        }
+
+        .btn {
+                width: 180px;
+                height: 60px;
+                cursor: pointer; */
+                /* background: #FF6B35; /* This is for the button color itself*/
+                /* outline: none;
+                transition: 1s ease-in-out;
+        }
+
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            fill: none;
+            stroke: #EFEFD0; This is for the rotation line in the button */
+            /* stroke-dasharray: 150 480;
+            stroke-dashoffset: 150;
+            transition: 1s ease-in-out;
+        }
+
+        .btn:hover {
+            transition: 1s ease-in-out;
+            background: #004E89;
+        }
+
+        .btn:hover svg {
+            stroke-dashoffset: -480;
+        }
+
+        .btn span {
+            color: #EFEFD0; This is for the text in the button */
+            /* font-size: 20px;
+            font-weight: 100;
+            font-family: 'Arcade Normal', sans-serif;
+            text-shadow: 0px 0px 10px #000;
+        } */
 
     </style>
 </head>

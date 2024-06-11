@@ -23,7 +23,9 @@
                 <td><div class="table-content">{{ h.quantity }}</div></td>
                 <td><div class="table-content">{{ h.timestamp }}</div></td>
                 <td>
-                    <a href="/history/{{ h.id }}" class="btn btn-error">Delete</a>
+                    <div class="delete-btn">
+                        <a href="/history/{{ h.id }}" class="btn btn-error">Delete</a>
+                    </div>
                 </td>
             </tr>
         {% endfor %}
