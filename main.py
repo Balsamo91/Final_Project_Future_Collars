@@ -74,7 +74,6 @@ def submit_purchase():
     quantity = int(request.form['quantity'])
 
     if account >= price * quantity:
-    # If user enters the same item, this will catch it and it will add the quantity, if not it will add the dict to the list warehouse_list[] 
         item_exist = False
 
         for p in warehouse_list:
@@ -88,7 +87,7 @@ def submit_purchase():
             db.session.add(new_purchase)
 
         
-        account -= price * quantity # substract the purchased items from the account
+        account -= price * quantity
         balance_record.amount = account
         db.session.commit()
 
@@ -96,18 +95,14 @@ def submit_purchase():
         db.session.add(new_purchase_history)
         db.session.commit()
 
-        # success_message = f"Purchase has been successful! {quantity} unit(s) of {name} bought for a total of {price * quantity}."
-        # time.sleep(2)
-        # return render_template('purchase.html', balance=account, success_message=success_message)
+        success_message = f"Purchase has been successful! {quantity} unit(s) of {name} bought for a total of {price * quantity}."
+        # time.sleep(1)
+        # return render_template('purchase.html', balance=account, success_message=success_message) and time.sleep(2) and redirect('/purchase')
+        return render_template('purchase.html', balance=account, success_message=success_message, redirect_delay=True)
 
     else:
         error_message_funds = "You're broke Bruah! Retry when you've got Coins! ;)"
-        return render_template('purchase.html', balance=account, error_message_funds=error_message_funds)
-
-
-    # Redirect me to the main page
-    return redirect('/') 
-
+        return render_template('purchase.html', balance=account, error_message_funds=error_message_funds, redirect_delay_error=True)
 
 @app.route('/sale')
 def sale():
@@ -145,15 +140,14 @@ def submit_sale():
                 new_sale_history = History(type='sale action', name=name, price=price, quantity=quantity)
                 db.session.add(new_sale_history)
                 db.session.commit()
+
+                success_message = f"Sale has been successful! {quantity} unit(s) of {name} sold for a total of {price * quantity}."
+                return render_template('sale.html', balance=account, success_message=success_message, redirect_delay=True)
                     
-                break
     if not product_found:
         # If the product is not found in the database
         error_message_name = f"Product '{name}' not found in the database."
-        return render_template('sale.html', balance=account, error_message_name=error_message_name)
-
-    # Redirect me to the main page
-    return redirect('/') 
+        return render_template('sale.html', balance=account, error_message_name=error_message_name, redirect_delay_error=True)
 
 @app.route('/balance')
 def balance():
@@ -172,21 +166,27 @@ def submit_balance():
         add_money = History(type='Balance ADD action', name='Add', price=amount, quantity='N/A')
         db.session.add(add_money)
         db.session.commit()
+
+        balance_record.amount = account
+        db.session.commit()
+
+        success_message = f"You have successfully Added Euro {amount} to your account!"
+        return render_template('balance.html', balance=account, success_message=success_message, redirect_delay=True)
+
     elif operation == 'Withdraw' and account >= amount:
         account -= amount
         withdraw_money = History(type='Balance WITHDRAW action', name='Withdraw', price=amount, quantity='N/A')
         db.session.add(withdraw_money)
         db.session.commit()
+
+        balance_record.amount = account
+        db.session.commit()
+
+        success_message = f"You have successfully Withdrawn Euro {amount} from your account!"
+        return render_template('balance.html', balance=account, success_message=success_message, redirect_delay=True)
     else:
-        error_message_funds_again = "I do it for you, Trust me Bro!"
-        return render_template("balance.html", balance=account, error_message_funds_again=error_message_funds_again)
-
-
-    balance_record.amount = account
-    db.session.commit()
-    
-    # Redirect me to the main page
-    return redirect('/') 
+        error_message_funds_again = "Not allowed, Trust me Bro!"
+        return render_template("balance.html", balance=account, error_message_funds_again=error_message_funds_again, redirect_delay_error=True)
 
 
 with app.app_context():

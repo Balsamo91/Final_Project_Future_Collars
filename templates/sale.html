@@ -24,10 +24,21 @@
             {% if error_message %}
                 <p class="error-message" style="color: red;">{{ error_message }}</p> 
             {% endif %}
+            {% if redirect_delay_error %}
+                <meta http-equiv="refresh" content="2;url=/sale">
+            {% endif %}
         </div>
     </div>
     <div class="button-action">
         <button type="submit" class="button-action">Submit Sale</button>
+    </div>
+    <div class="typing-box">
+        {% if success_message %}
+            <p class="success-message" style="color: green;">{{ success_message }}</p>
+        {% endif %}
+        {% if redirect_delay %}
+            <meta http-equiv="refresh" content="5;url=/">
+        {% endif %}
     </div>
 </form>
 {% endblock %}
