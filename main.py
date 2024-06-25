@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
-import time
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///warehouse.db'
@@ -38,7 +37,6 @@ def index():
     warehouse_list = Warehouse.query.all()
     account = Balance.query.first().amount
     return render_template("index.html", warehouse=warehouse_list, balance=account)
-
 
 @app.route('/history')
 def history():
@@ -96,8 +94,6 @@ def submit_purchase():
         db.session.commit()
 
         success_message = f"Purchase has been successful! {quantity} unit(s) of {name} bought for a total of {price * quantity}."
-        # time.sleep(1)
-        # return render_template('purchase.html', balance=account, success_message=success_message) and time.sleep(2) and redirect('/purchase')
         return render_template('purchase.html', balance=account, success_message=success_message, redirect_delay=True)
 
     else:
@@ -143,6 +139,7 @@ def submit_sale():
 
                 success_message = f"Sale has been successful! {quantity} unit(s) of {name} sold for a total of {price * quantity}."
                 return render_template('sale.html', balance=account, success_message=success_message, redirect_delay=True)
+            
                     
     if not product_found:
         # If the product is not found in the database
@@ -187,7 +184,6 @@ def submit_balance():
     else:
         error_message_funds_again = "Not allowed, Trust me Bro!"
         return render_template("balance.html", balance=account, error_message_funds_again=error_message_funds_again, redirect_delay_error=True)
-
 
 with app.app_context():
     db.create_all()
